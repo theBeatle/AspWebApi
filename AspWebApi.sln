@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspWebApi", "AspWebApi\AspWebApi.csproj", "{15F76066-13E1-4CE3-965E-B78DB7918981}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_AjaxHelpers", "01_AjaxHelpers\01_AjaxHelpers.csproj", "{F87F74A9-902E-4F02-8430-0DB07C225707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{15F76066-13E1-4CE3-965E-B78DB7918981}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15F76066-13E1-4CE3-965E-B78DB7918981}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15F76066-13E1-4CE3-965E-B78DB7918981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87F74A9-902E-4F02-8430-0DB07C225707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87F74A9-902E-4F02-8430-0DB07C225707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87F74A9-902E-4F02-8430-0DB07C225707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87F74A9-902E-4F02-8430-0DB07C225707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

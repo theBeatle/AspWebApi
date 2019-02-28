@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    var options = new AjaxOptions()
+    {
+        Url = Url.Action("OrdersData"),
+        UpdateTargetId = "datatable"
+    };
+}
+
+<h2>Orders</h2>
+
+@using (Ajax.BeginForm(options))
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Quntity</th>
+                <th>Customer</th>
+            </tr>
+        </thead>
+
+        <tbody id="datatable">
+            @Html.Action("OrdersData", new { id = Model })
+        </tbody>
+    </table>
+
+    <p>
+        @Html.DropDownList("id", new SelectList(new[] {"All","Andrij","Ivan","Petro","Vasja"}, (Model ?? "All")))
+        <input type="submit" value="Get ordered poducts"/>
+    </p>
+}
+
+@section scripts{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+}
